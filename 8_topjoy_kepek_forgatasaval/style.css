@@ -1,0 +1,44 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(./images/background.png);
+    user-select: none;
+    background-color: #198754;
+    background-size: cover;
+}
+
+.container {
+    height: 400px;
+    width: 250px;
+    position: relative;
+}
+
+img {
+    height: 400px;
+    cursor: pointer;
+    position: absolute;
+}
+
+.szoveg-tarolo {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    cursor: pointer;
+}
+
+.szoveg {
+    text-align: center;
+    overflow-wrap: break-word;
+
+}
