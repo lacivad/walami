@@ -33,12 +33,17 @@ img {
     width: 250px;
     display: flex;
     justify-content: center;
-    padding: 3rem;
+    padding: 5rem;
     cursor: pointer;
 }
 
 .szoveg {
     text-align: center;
     overflow-wrap: break-word;
+    font-size: 20px;
 
+}
+
+.hidden {
+    opacity: 0%;
 }

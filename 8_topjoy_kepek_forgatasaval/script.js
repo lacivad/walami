@@ -17,3 +17,25 @@ window.addEventListener('DOMContentLoaded', async() => {
         console.log(error)
     }
 });
+
+const animateCap = async (start, end) => {
+    const step = start < end ? 1 : -1
+    for (let index = start; index !== end + step; index += step) {
+        await new Promise(resolve => setTimeout(resolve, 13));
+        kupak.src = `./images/bottlecap_${index}.png`
+    }
+}
+
+tarolo.addEventListener('click', async () => {
+    if(isClosed) {
+        await animateCap(0, 10);
+        szoveg.textContent = uzik[Math.floor(Math.random() * uzik.length)];
+        szoveg.classList.remove("hidden")
+        isClosed = false;
+    } else {
+        szoveg.classList.add("hidden")
+        await animateCap(10, 0);
+        isClosed = true;
+    }
+})
+
