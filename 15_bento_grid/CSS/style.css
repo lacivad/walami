@@ -35,6 +35,18 @@ h1 {
 @media (min-width: 700px) {
     .grid {
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 140px);
+        grid-template-areas: 
+            "a b"
+            "a c"
+            "d d"
+            "d d"
+            "e e"
+            "f g"
+            "h i"
+            "j j"
+            "k l"
+            "k l";
     }
 }
 
