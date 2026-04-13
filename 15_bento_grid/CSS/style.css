@@ -121,7 +121,7 @@ h1 {
 }
 
 .card:hover {
-    transform: scale(1.02);
+        transform: scale(1.02);
 }
 
 .card img {
@@ -130,4 +130,3 @@ h1 {
     display: block;
     object-fit: cover;
 }
-
